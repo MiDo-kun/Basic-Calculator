@@ -1,0 +1,93 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+/* Bugs:
+    When the user input something, it overlaps
+    but that overlapping causes not to be seen the 
+    entire input/output of the user
+*/
+
+/* Reset to defualt */
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+    color: #333;
+    border: 0;
+    border-bottom: 5px solid #333;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin: 20px auto; 
+}
+
+/* Container Section */
+.container {
+    max-width: 400px; /* Set the width to 400px at minimum */
+    margin: 20px auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Result Section */
+#display {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    /* Means right to left */
+    /* Set height to the result though not it is not 
+       it is not automatically a centered vertical align
+    */
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+    overflow: hidden;
+    height: 100px;
+    line-height: 70px;
+    padding: 16px 8px;
+    margin: 0 10px;
+    font-size: 42px;
+}
+
+.buttons {
+    /* Divide the class button
+       into 4 horizontal sections
+       need more information about the 
+       grid part
+    */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+}
+
+.button  {  
+    padding: 0;
+    color: #333;
+    line-height: 80px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid #999;
+    cursor: pointer;
+
+    /* Fix issue in highlighting */
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.button:hover {
+    background-color: #999;
+    transition: .5s;
+}
