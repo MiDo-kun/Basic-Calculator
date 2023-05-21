@@ -6,7 +6,7 @@ A calculator web application that is built using HTML, CSS, and Javascript that 
 
 You can view the live website [here](https://mido-kun.github.io/Basic-Calculator/).
 
-## Main Objective/s
+## Main Objectives
 
 The main objectives of this project were to:
 
